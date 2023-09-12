@@ -378,16 +378,44 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
 }
 .about .image-about {
   display: flex;
-  width: auto;
-  height: auto;
+  justify-content: center;
+  align-items: end;
+  background-image: url("/images/about-bild.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 600px;
 }
 @media (min-width: 1200px) {
   .about .image-about {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: end;
   }
+}
+.about .image-about .founder {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: #beebff;
+  width: 260px;
+  height: auto;
+  margin-bottom: 40px;
+  margin-left: 10px;
+}
+.about .image-about .founder h3 {
+  font-size: 14px;
+  font-weight: 700;
+  text-align: left;
+}
+.about .image-about .founder h3 b {
+  font-size: 10px;
+  color: #f94D1C;
+}
+.about .image-about .founder p {
+  font-size: 10px;
+  color: #191919;
+  text-align: left;
 }
 .about .about-company {
   display: block;
@@ -443,7 +471,7 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
 }
 .about .about-company .button-intro .botton-video {
   display: flex;
-  justify-self: start;
+  justify-self: center;
   padding-right: 30px;
 }
 .about .about-company .button-intro .intro {
@@ -468,4 +496,146 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
   .about .about-company .button-intro {
     display: flex;
   }
+}
+
+.our-services {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 50px;
+  text-align: left;
+  background-color: #F0EFE9;
+}
+.our-services .row-services {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin: 8px;
+}
+@media (min-width: 1140px) {
+  .our-services .row-services {
+    display: block;
+    justify-content: start;
+  }
+}
+.our-services .row-services p {
+  text-align: center;
+  color: #f94D1C;
+}
+@media (min-width: 1140px) {
+  .our-services .row-services p {
+    text-align: left;
+  }
+}
+.our-services .row-services h2 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+@media (min-width: 1140px) {
+  .our-services .row-services h2 {
+    text-align: left;
+    padding-bottom: 30px;
+  }
+}
+.our-services .service {
+  display: block;
+  justify-content: center;
+  width: 90%;
+  height: auto;
+  margin: 30px;
+}
+@media (min-width: 1042px) {
+  .our-services .service {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+  }
+}
+.our-services .service .tarjet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fefefe;
+  width: 100%;
+  height: auto;
+  padding: 40px;
+  border: 1px solid;
+  margin: 10px;
+}
+@media (min-width: 1042px) {
+  .our-services .service .tarjet {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 40px;
+    justify-content: start;
+  }
+}
+.our-services .service .tarjet hr {
+  color: black;
+  width: 30px;
+  height: 2px;
+  margin-bottom: 40px;
+}
+@media (min-width: 1042) {
+  .our-services .service .tarjet hr {
+    visibility: none;
+  }
+}
+.our-services .service .tarjet h4 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  text-align: center;
+}
+@media (min-width: 1042px) {
+  .our-services .service .tarjet h4 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+.our-services .service .tarjet p {
+  font-size: 16px;
+  text-align: center;
+}
+@media (min-width: 1042px) {
+  .our-services .service .tarjet p {
+    font-size: 8px;
+  }
+}
+.our-services .service .tarjet a {
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+}
+.our-services .service .tarjet a i {
+  color: #191919;
+  font-size: 45px;
+}
+.our-services .service .tarjet a i:hover {
+  color: white;
+}
+.our-services .service .tarjet:hover {
+  background-color: #f9d783;
+}
+.our-services .button-browse {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+.our-services .button-browse .intro {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
+}
+.our-services .button-browse .intro a {
+  text-decoration: none;
+  color: #191919;
 }

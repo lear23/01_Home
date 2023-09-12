@@ -455,6 +455,7 @@ header{
 
 }
 
+// ABOUT
 
 .about {
     display: block;
@@ -471,21 +472,59 @@ header{
      }
 
     .image-about{
+       display: flex;
+       justify-content:center;
+       align-items:  end;
+       background-image: url("/images/about-bild.svg");
+       background-repeat: no-repeat;
+       background-position: center;
+       width: 100%;
+       height: 600px;
+
+       @media (min-width:1200px){
         display: flex;
-        width:auto;
-        height: auto;
-      
+        justify-content: start;
+        align-items:  end;
+       }
+    
+    
+         
+        .founder{
+            display: flex;
+            flex-direction: column;
+            padding:30px;
+            background-color: #beebff;
+            width:260px;
+            height:auto;
+            margin-bottom: 40px;
+            margin-left: 10px;
 
-        @media (min-width:1200px){
-            
-             display: block;
-             margin-left: auto;
-             margin-right: auto;
-             width: 50%;
-         }
+            h3{
+                font-size: 14px;
+                font-weight: 700;
+                text-align: left;
+                   
+                b{
+                    font-size: 10px;  
+                    color: #f94D1C;
+                   
+                }
+            }
+            p{
+                font-size: 10px;
+                color: #191919;
+                text-align: left;
 
 
+            }
+
+        }
+        
     }
+    
+
+
+
 
     .about-company{
         display: block;
@@ -551,8 +590,12 @@ header{
                             
                  .botton-video{
                      display:flex;
-                     justify-self: start;
+                     justify-self: center;
                      padding-right: 30px;
+
+                    //  @media (min-width:1000){
+                    //     justify-self: start;
+                    //  }
         
                  }
                             
@@ -595,7 +638,214 @@ header{
 }
 
 
-
+    //   Our services
 
 
    
+
+
+    .our-services{
+        display:block;
+        width: 100%;
+        height: auto;
+        padding: 50px;
+        text-align: left;
+        background-color:#F0EFE9 ;
+      
+
+        .row-services{
+            display:block;
+            justify-content: center;
+            text-align: center;
+            margin: 8px;
+
+            @media (min-width:1140px){
+                display: block;
+                justify-content: start;
+                
+            }
+            p{
+                text-align: center;
+                color:#f94D1C;
+
+                @media (min-width:1140px) {
+                    
+                    text-align: left;
+                    
+                }
+
+                
+            }
+
+            h2{
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 700;
+                font-size: 45px;
+                text-align:center;
+                padding-bottom: 10px;
+               
+                @media (min-width:1140px){
+                    text-align: left;
+                    padding-bottom: 30px;
+                    
+                }
+
+           
+            }
+            
+
+            
+           
+        }
+
+
+
+        .service{           
+            display:block;
+            justify-content: center;
+            width: 90%;
+            height:auto; 
+            margin:30px;        
+    
+            @media (min-width:1042px){
+                display:flex;
+                justify-content: space-between;
+                width: 100%;
+                height: auto;
+                            
+                
+            }
+
+
+           .tarjet{
+              display:flex; 
+              flex-direction: column;             
+              justify-content: center; 
+              background-color: #fefefe;
+              width: 100%;
+              height: auto;
+              padding: 40px;
+              border: 1px solid;
+              margin: 10px;
+              
+
+              @media (min-width:1042px){
+                display: block;
+                width: 100%;
+                height: auto;
+                padding: 40px;
+                justify-content: start;
+            }
+
+               hr{
+                color: black;
+                width: 30px;
+                height: 2px;
+                margin-bottom: 40px;
+
+                  @media (min-width:1042){
+                    visibility: none;  
+                            
+                 }
+ 
+
+               }
+             
+               h4{
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 700;
+                font-size: 35px;
+                text-align: center;
+
+
+                @media (min-width:1042px){
+                   
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 20px;
+                    text-align: center;           
+                    
+                }
+
+                }
+                p{
+                    font-size: 16px;
+                    text-align: center;
+
+                    @media (min-width:1042px){
+
+                        font-size: 8px;
+                    }
+
+
+                }
+
+                a{
+
+                    text-align:center;
+                    font-size: 30px;
+                    text-decoration: none;
+
+                   
+
+
+                    i{
+                      
+                        color: #191919;
+                        font-size: 45px;
+                    
+
+                        &:hover{
+                        color: white;
+                            
+                        }
+                        
+                    }
+
+                  
+               }
+
+               &:hover{
+                   background-color: #f9d783;
+               }
+            
+            }
+
+
+   
+         }
+             
+         
+         .button-browse{
+
+            display: flex;
+            justify-content: center;
+            margin: 30px;
+           
+                       
+            
+                       
+                    .intro{
+                                
+                    display:flex;
+                    align-items: center;
+                    text-align:center;
+                    padding-top: 20px;
+
+                    a{
+                        text-decoration: none;
+                        color: #191919;
+                    }
+
+                    }
+
+        }
+
+
+    }
+
+
+
+
+
+
