@@ -4,6 +4,12 @@
 @import url("https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
 html, body {
   color: #191919;
   font-family: "Inter", sans-serif;
@@ -303,6 +309,11 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
   .showcase .container img {
     display: block;
   }
+}
+.showcase .line2 {
+  position: absolute;
+  top: 630px;
+  left: 285px;
 }
 
 .container .logos img {
@@ -652,10 +663,11 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
 .our-services .line {
   position: absolute;
   left: 1000px;
+  bottom: -165px;
 }
 
 .choose .container {
-  display: flex;
+  display: block;
   width: 100%;
   height: auto;
   margin-top: 90px;
@@ -664,7 +676,6 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
 .choose .container .box-1 {
   display: block;
   text-align: left;
-  padding-right: 200px;
 }
 .choose .container .box-1 p {
   text-align: left;
@@ -688,17 +699,18 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
 .choose .container .box-1 .boxes .box p {
   color: #191919;
 }
-.choose .container .box-2 {
-  position: relative;
-  border: 1px solid;
-}
 .choose .container .box-2 img {
-  position: relative;
-  top: 50;
-  width: 80%;
+  padding-top: 40px;
+  width: 100%;
   height: auto;
-  z-index: 1;
 }
+.choose .container .box-2 .line3 {
+  position: absolute;
+  right: 30px;
+  top: 3550px;
+  z-index: -1;
+}
+
 .projects .container .section-title {
   padding-top: 70px;
   padding-bottom: 40px;
