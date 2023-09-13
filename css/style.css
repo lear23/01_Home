@@ -32,25 +32,26 @@ html, body {
   color: whitesmoke;
 }
 
-.btn-theme-2 {
-  background-color: #f9d783;
-  border: 1px solid #f9d783;
-  color: #191919;
+.btn-black {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #ffffff;
   text-decoration: none;
-  padding: 12px 170px;
-  margin-left: 20px;
+  padding: 12px 30px;
   font-weight: 600;
+  font-size: 16px;
   border-radius: 30px;
 }
-.btn-theme-2 i {
+.btn-black i {
   margin-left: 8px;
   padding-bottom: 15px;
   font-size: 9px;
   font-weight: bolder;
 }
-.btn-theme-2:hover {
-  background-color: #191919;
-  color: whitesmoke;
+.btn-black:hover {
+  background-color: #ffffff;
+  border: 1px solid #191919;
+  color: #191919;
 }
 
 .btn-transparent {
@@ -117,6 +118,22 @@ html, body {
 .button1:hover {
   background-color: #f9d783;
   color: #191919;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-title p {
+  color: #f94D1C;
+}
+.section-title h2 {
+  color: #191919;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
 }
 
 header {
@@ -298,6 +315,7 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    margin-bottom: 100px;
   }
 }
 
@@ -372,7 +390,8 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
 @media (min-width: 1200px) {
   .about {
     display: flex;
-    padding: 70px;
+    padding-top: 120px;
+    padding-bottom: 110px;
     gap: 100px;
   }
 }
@@ -394,26 +413,24 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
   }
 }
 .about .image-about .founder {
-  display: flex;
-  flex-direction: column;
-  padding: 30px;
+  position: absolute;
+  padding: 40px 65px 55px 25px;
   background-color: #beebff;
-  width: 260px;
-  height: auto;
+  width: 360px;
+  height: 182px;
   margin-bottom: 40px;
-  margin-left: 10px;
 }
 .about .image-about .founder h3 {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 700;
   text-align: left;
 }
 .about .image-about .founder h3 b {
-  font-size: 10px;
+  font-size: 16px;
   color: #f94D1C;
 }
 .about .image-about .founder p {
-  font-size: 10px;
+  font-size: 16px;
   color: #191919;
   text-align: left;
 }
@@ -510,12 +527,16 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
   display: block;
   justify-content: center;
   text-align: center;
+  width: 100%;
+  height: auto;
   margin: 8px;
 }
 @media (min-width: 1140px) {
   .our-services .row-services {
     display: block;
     justify-content: start;
+    padding-top: 120px;
+    padding-bottom: 90px;
   }
 }
 .our-services .row-services p {
@@ -537,7 +558,6 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
 @media (min-width: 1140px) {
   .our-services .row-services h2 {
     text-align: left;
-    padding-bottom: 30px;
   }
 }
 .our-services .service {
@@ -553,6 +573,7 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
     justify-content: space-between;
     width: 100%;
     height: auto;
+    margin: 0px;
   }
 }
 .our-services .service .tarjet {
@@ -571,7 +592,6 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
     display: block;
     width: 100%;
     height: auto;
-    padding: 40px;
     justify-content: start;
   }
 }
@@ -624,18 +644,125 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
 .our-services .service .tarjet:hover {
   background-color: #f9d783;
 }
-.our-services .button-browse {
-  display: flex;
-  justify-content: center;
-  margin: 30px;
+.our-services .center-content {
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 120px;
 }
-.our-services .button-browse .intro {
+.our-services .line {
+  position: absolute;
+  left: 1000px;
+}
+
+.choose .container {
   display: flex;
-  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 90px;
+  margin-bottom: 125px;
+}
+.choose .container .box-1 {
+  display: block;
+  text-align: left;
+  padding-right: 200px;
+}
+.choose .container .box-1 p {
+  text-align: left;
+  color: #f94D1C;
+  margin-bottom: 10px;
+}
+.choose .container .box-1 h2 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+}
+.choose .container .box-1 .boxes {
+  display: flex;
+  text-align: left;
+  padding: 20px;
+  gap: 30px;
+}
+.choose .container .box-1 .boxes .box {
+  display: block;
+}
+.choose .container .box-1 .boxes .box p {
+  color: #191919;
+}
+.choose .container .box-2 {
+  position: relative;
+  border: 1px solid;
+}
+.choose .container .box-2 img {
+  position: relative;
+  top: 50;
+  width: 80%;
+  height: auto;
+  z-index: 1;
+}
+.projects .container .section-title {
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+@media (min-width: 768) {
+  .projects .container .section-title {
+    padding-top: 120px;
+    padding-bottom: 90px;
+  }
+}
+.projects .container .section-title h2 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
   text-align: center;
-  padding-top: 20px;
 }
-.our-services .button-browse .intro a {
+.projects .container .section-title p {
+  text-align: center;
+  color: #f94D1C;
+  margin-bottom: 10px;
+}
+.projects .container .project-images {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+@media (min-width: 768px) {
+  .projects .container .project-images {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.projects .container .project-images article {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+.projects .container .project-images article img {
+  width: 100%;
+  height: auto;
+}
+.projects .container .project-images article h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  padding-top: 35px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #DAD9D3;
+  text-align: left;
+}
+.projects .container .project-images article a {
+  padding: 15px;
+  display: block;
+  text-align: right;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
   text-decoration: none;
   color: #191919;
+}
+.projects .container .project-images article a i {
+  margin-left: 3px;
+  font-size: 10px;
+}
+.projects .container .center-content {
+  margin-top: 50px;
+  margin-bottom: 90px;
 }

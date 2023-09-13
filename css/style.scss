@@ -45,14 +45,15 @@ html, body{
     }
 }
 
-.btn-theme-2 {
-    background-color: #f9d783;
-    border: 1px solid #f9d783;
-    color: #191919;
+.btn-black {
+    background-color: #191919;
+    border: 1px solid #191919;
+    color: #ffffff;
     text-decoration: none;
-    padding: 12px 170px;
-    margin-left: 20px;
+    padding: 12px 30px;
+    // margin-left: 20px;
     font-weight: 600;
+    font-size: 16px;
     border-radius: 30px;
 
     i{
@@ -62,8 +63,9 @@ html, body{
         font-weight: bolder;
     }
     &:hover{
-        background-color: #191919;
-        color: whitesmoke;
+        background-color: #ffffff;
+        border:1px solid #191919;
+        color: #191919;
     }
 }
 
@@ -139,6 +141,31 @@ html, body{
     
 
 } 
+
+.center-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+} 
+
+
+.section-title{
+    p{
+       
+        color:#f94D1C;
+
+    }
+
+    h2{
+        color: #191919;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 700;
+        font-size: 45px;
+       
+    }
+   
+}
 
 
 // header
@@ -357,7 +384,7 @@ header{
     }
 }
 
-// logos of partnerships
+// logos of partnerships-section
 
 
 .container {        
@@ -373,7 +400,8 @@ header{
              @media (min-width:920px){
                     display: flex;
                     justify-content: center;
-                    margin-top: 30px;           
+                    margin-top: 30px;
+                    margin-bottom: 100px;           
                              
                 }
 
@@ -392,6 +420,8 @@ header{
      @media (min-width:992px){
         display: flex;
         border: 1px solid #191919;
+        
+    
      }
 
 
@@ -455,7 +485,7 @@ header{
 
 }
 
-// ABOUT
+// ABOUT-section
 
 .about {
     display: block;
@@ -466,7 +496,8 @@ header{
     
     @media (min-width:1200px){
         display: flex;
-        padding: 70px;
+        padding-top:120px;
+        padding-bottom: 110px;
         gap: 100px;
         
      }
@@ -479,7 +510,7 @@ header{
        background-repeat: no-repeat;
        background-position: center;
        width: 100%;
-       height: 600px;
+       height:600px;
 
        @media (min-width:1200px){
         display: flex;
@@ -490,28 +521,29 @@ header{
     
          
         .founder{
-            display: flex;
-            flex-direction: column;
-            padding:30px;
+            // display: flex;
+            // flex-direction: column;
+            position: absolute;
+            padding:40px 65px 55px 25px;
             background-color: #beebff;
-            width:260px;
-            height:auto;
+            width:360px;
+            height:182px;
             margin-bottom: 40px;
-            margin-left: 10px;
+           
 
             h3{
-                font-size: 14px;
+                font-size: 20px;
                 font-weight: 700;
                 text-align: left;
                    
                 b{
-                    font-size: 10px;  
+                    font-size: 16px;  
                     color: #f94D1C;
                    
                 }
             }
             p{
-                font-size: 10px;
+                font-size: 16px;
                 color: #191919;
                 text-align: left;
 
@@ -638,30 +670,32 @@ header{
 }
 
 
-    //   Our services
-
-
-   
-
-
-    .our-services{
+    //   Our services-section
+    
+   .our-services{
         display:block;
         width: 100%;
         height: auto;
         padding: 50px;
         text-align: left;
-        background-color:#F0EFE9 ;
+        background-color:#F0EFE9;
       
 
         .row-services{
             display:block;
             justify-content: center;
             text-align: center;
+            width: 100%;
+            height: auto;
             margin: 8px;
+           
+           
 
             @media (min-width:1140px){
                 display: block;
                 justify-content: start;
+                padding-top: 120px;
+                padding-bottom: 90px;
                 
             }
             p{
@@ -686,7 +720,7 @@ header{
                
                 @media (min-width:1140px){
                     text-align: left;
-                    padding-bottom: 30px;
+                    // padding-bottom: 30px;
                     
                 }
 
@@ -697,9 +731,6 @@ header{
             
            
         }
-
-
-
         .service{           
             display:block;
             justify-content: center;
@@ -712,11 +743,9 @@ header{
                 justify-content: space-between;
                 width: 100%;
                 height: auto;
-                            
+                margin: 0px;                          
                 
             }
-
-
            .tarjet{
               display:flex; 
               flex-direction: column;             
@@ -733,7 +762,7 @@ header{
                 display: block;
                 width: 100%;
                 height: auto;
-                padding: 40px;
+                // padding: 40px;
                 justify-content: start;
             }
 
@@ -784,11 +813,7 @@ header{
 
                     text-align:center;
                     font-size: 30px;
-                    text-decoration: none;
-
-                   
-
-
+                    text-decoration: none;                 
                     i{
                       
                         color: #191919;
@@ -800,52 +825,197 @@ header{
                             
                         }
                         
-                    }
-
-                  
+                    }                  
                }
 
                &:hover{
                    background-color: #f9d783;
                }
             
+            }   
+         }
+         .center-content{
+            position: relative;
+            margin-top: 40px;
+            margin-bottom: 120px;        
+         }
+
+         .line{
+           position: absolute;
+           left: 1000px;
+           
+         }
+
+         
+
+ }
+   
+ 
+ 
+ //  Why choose us 
+
+ .choose{
+  
+
+    .container{
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin-top: 90px;
+        margin-bottom: 125px;
+
+        .box-1{
+            display: block;
+            text-align: left;
+            padding-right: 200px;
+
+            p{
+                text-align: left;
+                color:#f94D1C;
+                margin-bottom: 10px;
+    
             }
 
+            h2{
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 700;
+                font-size: 45px;
+                
+            }
 
-   
-         }
-             
-         
-         .button-browse{
+            .boxes{
+                display: flex;
+                text-align: left;
+                padding: 20px;
+                gap: 30px;
 
-            display: flex;
-            justify-content: center;
-            margin: 30px;
-           
-                       
-            
-                       
-                    .intro{
-                                
-                    display:flex;
-                    align-items: center;
-                    text-align:center;
-                    padding-top: 20px;
+                .box{
+                   display: block;
 
-                    a{
-                        text-decoration: none;
+
+                    p{
                         color: #191919;
                     }
+                }
 
+            }
+        }
+        .box-2{        
+            
+           
+
+            img{
+              
+            .rectangle{
+               
+            }
+           
+
+        }
+       
+    }
+ }
+
+
+
+
+    // Projects and cases
+
+
+    .projects{
+
+        .container{
+
+            .section-title{
+                padding-top: 70px;
+                padding-bottom: 40px;
+
+                @media(min-width:768){
+                    padding-top: 120px;
+                    padding-bottom: 90px;
+                }
+
+                h2{
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 45px;
+                    text-align: center;
+                }
+                p{
+                    text-align: center;
+                    color:#f94D1C;
+                    margin-bottom: 10px;
+        
+                }
+           
+           
+           
+            }
+            .project-images{
+                display: grid;
+                grid-template-columns: 1fr ;
+                gap: 30px;
+
+                @media (min-width:768px){
+                    grid-template-columns: 1fr 1fr;
+                }
+
+
+                article {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: auto 1fr auto;
+
+
+
+                    img{
+                        width: 100%;
+                        height: auto;
+                        
+                    }
+                    h3 {
+                        font-family: "DM Sans", sans-serif;
+                        font-weight: 700;
+                        font-size: 22px;   
+                        padding-top: 35px;     
+                        padding-bottom: 16px;  
+                        border-bottom:1px solid #DAD9D3;
+                        text-align: left;          
+   
                     }
 
+                    a {
+                        padding: 15px;
+                        display: block;
+                        text-align: right;
+                        font-family: 'Inter', sans-serif;
+                        font-size: 14px;
+                        font-weight: 500;
+                        text-decoration: none;
+                        color: #191919;
+
+                        i{
+                            margin-left: 3px;
+                            font-size: 10px;
+                        }
+
+                    }
+                }
+
+                
+            }
+          
+        
+            .center-content{
+                margin-top:50px ;
+                margin-bottom: 90px;
+             } 
+        
+        
+        
         }
 
 
-    }
 
-
-
-
-
+ }
 
