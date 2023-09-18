@@ -1149,11 +1149,75 @@ header{
 
 
  }
+
+
+        //   Meet our team
+
+.meet-our-team{
+    background-color: #edcf86;
+    padding: 16px;
+
+    .team{
+         display:block;
+         justify-content: space-between;
+         text-align: left;
+         padding-bottom: 95px;
+         padding-top: 120px;
+         p{
+            font-size: 18px;
+            font-weight: 500;
+            color: #f66f37;
+            padding: 10px;
+        }
+
+        .team-title{
+            display: flex;
+            justify-content: space-between;
+           
+
+            h2{
+                font-size: 45px;
+                font-weight: 700;
+                font-family: 'DM sans', sans-serif;
+            }
+            a{
+                border: 1px solid #191919;
+                padding: 12px 50px;
+              
+
+            }
+        }
+       
+       
+    }
+    .team-images{
+        display: flex;
+        text-align: left;
+        padding-bottom: 50px;
+        gap: 30px;
+     
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  article{
         
     background-color:#F0EFE9;
     padding: 16px;
-    
+      
    
 
    .container{
@@ -1288,9 +1352,12 @@ header{
 
         .container{
            display:grid;
+           justify-content: center;
            grid-template-columns: repeat(2, 1fr);
            column-gap: 20px;
-           padding-top: 50px;
+           padding-left: 20px;
+           padding-top: 40px;
+           text-align: left;
            
           
 
