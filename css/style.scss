@@ -1187,9 +1187,15 @@ header{
     .team{
          display:block;
          justify-content: space-between;
-         text-align: left;
-         padding-bottom: 95px;
-         padding-top: 120px;
+         text-align: center;
+         padding-bottom: 55px;
+         padding-top: 60px;
+
+         @media (min-width:920px) {
+            text-align: left;
+            padding-bottom: 95px;
+            padding-top: 120px;
+         }
 
 
          p{
@@ -1197,24 +1203,35 @@ header{
             font-weight: 500;
             color: #f66f37;
             padding: 10px;
+
         }
 
         .team-title{
             display: block;
-            justify-content: space-between; 
+            justify-content: center; 
+            align-items: center;
+            margin: 30px;
+            padding-bottom: 10px;
+           
 
-            @media (min-width:992px) {
+            @media(min-width: 992px) {
                 display: flex;
                 justify-content: space-between;
                 padding-bottom: 50px;
             }          
 
             h2{
-                font-size: 45px;
-                font-weight: 700;
-                font-family: 'DM sans', sans-serif;
+               padding-bottom: 30px;
+                @media (min-width:992px) {
+                    font-size: 45px;
+                    font-weight: 700;
+                    font-family: 'DM sans', sans-serif;
+                    
+                }
+
             }
-            a{
+            a{   
+            
                 border: 1px solid #191919;
                 padding: 12px 50px;
               
@@ -1246,10 +1263,19 @@ header{
 
 .testimonial{     
 
-    padding-bottom:120px ;
+    padding-bottom:20px ;
+    @media (min-width:992px) {
+        padding-bottom:120px;
+    }
     .container{
         background-color: #Ffffff;
-        padding:120px  100px;
+        width: 100%;
+        height: auto;
+      
+
+        @media (min-width:992px) {
+            padding:120px 100px 80px 100px;
+        }
 
 
         .client-says{
@@ -1288,6 +1314,7 @@ header{
                     justify-content: center;
                     align-items: center;
                     text-align: left;
+                    
                     
                     
                     @media (min-width:992px) {
@@ -1338,7 +1365,11 @@ header{
         }
 
         .black-button{
-             padding-top: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 40px;
+            padding-bottom: 40px;
         }
 
 
@@ -1350,18 +1381,6 @@ header{
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

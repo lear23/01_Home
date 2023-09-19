@@ -906,9 +906,16 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
 .meet-our-team .team {
   display: block;
   justify-content: space-between;
-  text-align: left;
-  padding-bottom: 95px;
-  padding-top: 120px;
+  text-align: center;
+  padding-bottom: 55px;
+  padding-top: 60px;
+}
+@media (min-width: 920px) {
+  .meet-our-team .team {
+    text-align: left;
+    padding-bottom: 95px;
+    padding-top: 120px;
+  }
 }
 .meet-our-team .team p {
   font-size: 18px;
@@ -918,7 +925,10 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
 }
 .meet-our-team .team .team-title {
   display: block;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  padding-bottom: 10px;
 }
 @media (min-width: 992px) {
   .meet-our-team .team .team-title {
@@ -928,9 +938,14 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
   }
 }
 .meet-our-team .team .team-title h2 {
-  font-size: 45px;
-  font-weight: 700;
-  font-family: "DM sans", sans-serif;
+  padding-bottom: 30px;
+}
+@media (min-width: 992px) {
+  .meet-our-team .team .team-title h2 {
+    font-size: 45px;
+    font-weight: 700;
+    font-family: "DM sans", sans-serif;
+  }
 }
 .meet-our-team .team .team-title a {
   border: 1px solid #191919;
@@ -955,11 +970,22 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
   padding-bottom: 70px;
 }
 .meet-our-team .testimonial {
-  padding-bottom: 120px;
+  padding-bottom: 20px;
+}
+@media (min-width: 992px) {
+  .meet-our-team .testimonial {
+    padding-bottom: 120px;
+  }
 }
 .meet-our-team .testimonial .container {
   background-color: #Ffffff;
-  padding: 120px 100px;
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 992px) {
+  .meet-our-team .testimonial .container {
+    padding: 120px 100px 80px 100px;
+  }
 }
 .meet-our-team .testimonial .container .client-says {
   padding-bottom: 40px;
@@ -1028,7 +1054,11 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
   color: #f94D1C;
 }
 .meet-our-team .testimonial .container .black-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 article {
