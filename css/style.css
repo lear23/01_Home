@@ -669,7 +669,7 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
     display: block;
     justify-content: start;
     padding-top: 120px;
-    padding-bottom: 90px;
+    padding-bottom: 40px;
   }
 }
 .our-services .row-services p {
@@ -686,7 +686,6 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
   font-weight: 700;
   font-size: 45px;
   text-align: center;
-  padding-bottom: 10px;
 }
 @media (min-width: 1140px) {
   .our-services .row-services h2 {
@@ -711,16 +710,18 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-color: #fefefe;
   width: 100%;
   height: auto;
-  border: 1px solid;
+  border: 1px solid #191919;
   margin: 10px;
+  transition: width 2s, height 2s, transform 1s;
 }
 @media (min-width: 992px) {
   .our-services .service .tarjet {
     display: block;
-    justify-content: start;
+    text-align: end;
     width: 100%;
     height: auto;
     padding: 40px;
@@ -732,11 +733,6 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
   height: 2px;
   margin-bottom: 40px;
 }
-@media (min-width: 1042) {
-  .our-services .service .tarjet hr {
-    visibility: none;
-  }
-}
 .our-services .service .tarjet h4 {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
@@ -747,25 +743,26 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
   .our-services .service .tarjet h4 {
     font-family: "DM Sans", sans-serif;
     font-weight: 700;
-    font-size: 20px;
-    text-align: center;
+    font-size: 22px;
+    text-align: left;
   }
 }
 .our-services .service .tarjet p {
-  font-size: 16px;
+  font-size: 22px;
   text-align: center;
 }
 @media (min-width: 1042px) {
   .our-services .service .tarjet p {
-    font-size: 8px;
+    text-align: left;
+    font-size: 16px;
   }
 }
 .our-services .service .tarjet a {
-  text-align: center;
-  font-size: 30px;
+  text-align: right;
   text-decoration: none;
 }
 .our-services .service .tarjet a i {
+  text-align: right;
   color: #191919;
   font-size: 45px;
 }
@@ -774,6 +771,15 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
 }
 .our-services .service .tarjet:hover {
   background-color: #f9d783;
+  width: 150%;
+  height: auto;
+  transform: rotate(360deg);
+}
+.our-services .service .tarjet:hover h4 {
+  font-size: 35px;
+}
+.our-services .service .tarjet:hover p {
+  font-size: 25px;
 }
 .our-services .center-content {
   padding: 20px;
