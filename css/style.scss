@@ -431,26 +431,62 @@ header{
 // logos of partnerships-section
 
 
-.container {        
+// .container {        
 
-    .logos img{
+//     .logos img{
         
-            display:none;
-            max-width: 100%;
-            height: auto;
+//             display:none;
+//             max-width: 100%;
+//             height: auto;
             
 
 
-             @media (min-width:920px){
-                    display: flex;
-                    justify-content: center;
-                    margin-top: 30px;
-                    margin-bottom: 100px;           
+//              @media (min-width:920px){
+//                     display: flex;
+//                     justify-content: center;
+//                     margin-top: 30px;
+//                     margin-bottom: 100px;           
                              
-                }
+//                 }
 
+//     }
+// // }
+
+.slider{
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+
+    .slide-track{
+        display: flex;
+        -webkit-animation: scroll 40s linear infinite;
+        animation: scroll 40s linear infinite;        
+        width: calc(200px * 10);
+
+        .slide{
+            width: 200px;
+
+        }
+        img{
+            width: 100%;
+
+        }
+    }
+
+ }
+ @keyframes scroll{
+    0%{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+   100%{
+        -webkit-transform: translateX(-200px * 5);
+        transform: translateX(-200px * 5);
     }
 }
+
+
 
 
 .parent{
@@ -602,7 +638,7 @@ header{
             height:130px;
             margin-bottom: 40px;
 
-            @media(min-width:992px) {
+            @media(min-width:768px) {
                 padding:40px 65px 55px 25px;
                 width:360px;
                 height:182px;

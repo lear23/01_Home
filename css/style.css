@@ -343,20 +343,32 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
   z-index: -1;
 }
 
-.container .logos img {
-  display: none;
-  max-width: 100%;
+.slider {
+  width: 75vw;
   height: auto;
+  margin: auto;
+  overflow: hidden;
 }
-@media (min-width: 920px) {
-  .container .logos img {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 100px;
-  }
+.slider .slide-track {
+  display: flex;
+  animation: scroll 40s linear infinite;
+  width: 2000px;
+}
+.slider .slide-track .slide {
+  width: 200px;
+}
+.slider .slide-track img {
+  width: 100%;
 }
 
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1000px);
+  }
+}
 .parent {
   display: block;
   justify-content: center;
@@ -485,7 +497,7 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
   height: 130px;
   margin-bottom: 40px;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .about .image-about .founder {
     padding: 40px 65px 55px 25px;
     width: 360px;
