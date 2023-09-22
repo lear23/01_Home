@@ -495,7 +495,7 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
   background-color: #beebff;
   width: 260px;
   height: 130px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 @media (min-width: 768px) {
   .about .image-about .founder {
@@ -503,18 +503,18 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
     width: 360px;
     height: 182px;
     animation-name: example;
-    animation-duration: 4s;
+    animation-duration: 14s;
     animation-iteration-count: infinite;
   }
 }
 @keyframes example {
   0% {
-    background-color: rgb(238, 136, 136);
+    background-color: #beebff;
     left: 0px;
     bottom: 0px;
   }
   25% {
-    background-color: rgb(247, 247, 150);
+    background-color: #beebff 247, 247, 150;
     left: 200px;
     bottom: 0px;
   }
@@ -524,12 +524,12 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
     bottom: 200px;
   }
   75% {
-    background-color: rgb(140, 238, 140);
+    background-color: #beebff;
     left: 0px;
     bottom: 200px;
   }
   100% {
-    background-color: rgb(251, 170, 170);
+    background-color: #beebff;
     left: 0px;
     bottom: 0px;
   }
@@ -568,7 +568,7 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-left: 25px;
+  margin-top: 20px;
 }
 @media (min-width: 1200px) {
   .about .about-company {
@@ -622,16 +622,16 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
     display: flex;
     justify-content: left;
     align-items: center;
+    gap: 20px;
   }
 }
 .about .about-company .button-intro .botton-video {
-  padding-right: 30px;
-  margin-top: 30px;
+  gap: 30px;
 }
 .about .about-company .button-intro .botton-video .btn-theme-3 {
+  display: block;
   justify-self: center;
   align-items: center;
-  margin-left: 25px;
 }
 @media (min-width: 992px) {
   .about .about-company .button-intro .botton-video .btn-theme-3 {
@@ -639,6 +639,13 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
     justify-self: center;
     align-items: center;
   }
+}
+.about .about-company .button-intro .botton-video a {
+  font-size: 1.2em;
+}
+.about .about-company .button-intro .botton-video a i {
+  padding: 5px;
+  font-size: 1rem;
 }
 .about .about-company .button-intro .intro {
   display: flex;
@@ -649,9 +656,12 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
 .about .about-company .button-intro .intro a {
   text-decoration: none;
   color: #191919;
+  font-size: 20px;
 }
 .about .about-company .button-intro .intro img {
+  width: 5rem;
   padding: 10px;
+  color: #191919;
 }
 
 .our-services {
@@ -742,16 +752,6 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
   }
   .our-services .service .tarjet:hover {
     background-color: #f9d783;
-    width: 100%;
-    height: auto;
-    margin: auto;
-    transform: rotate(360deg);
-  }
-  .our-services .service .tarjet:hover h4 {
-    font-size: 30px;
-  }
-  .our-services .service .tarjet:hover p {
-    font-size: 20px;
   }
 }
 .our-services .service .tarjet hr {
@@ -799,8 +799,11 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
 .our-services .center-content {
   padding: 20px;
 }
+.our-services .center-content a {
+  border: 1px solid #191919;
+}
 @media (min-width: 992px) {
-  .our-services .center-content {
+  .our-services .center-content a {
     margin-top: 40px;
     margin-bottom: 120px;
   }
@@ -1103,8 +1106,9 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
 }
 .meet-our-team .team-images .img-team-1:hover {
   background-color: white;
-  transform: scale(130%);
+  transform: scale(1.1);
   padding: 0;
+  text-align: center;
 }
 .meet-our-team .team-images .img-team-2 {
   max-width: 300px;
@@ -1114,8 +1118,9 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
 }
 .meet-our-team .team-images .img-team-2:hover {
   background-color: white;
-  transform: scale(130%);
+  transform: scale(1.1);
   padding: 0;
+  text-align: center;
 }
 .meet-our-team .team-images .img-team-3 {
   max-width: 300px;
@@ -1125,8 +1130,9 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
 }
 .meet-our-team .team-images .img-team-3:hover {
   background-color: white;
-  transform: scale(130%);
+  transform: scale(1.1);
   padding: 0;
+  text-align: center;
 }
 .meet-our-team .team-images .img-team-4 {
   max-width: 300px;
@@ -1136,8 +1142,9 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
 }
 .meet-our-team .team-images .img-team-4:hover {
   background-color: white;
-  transform: scale(130%);
+  transform: scale(1.1);
   padding: 0;
+  text-align: center;
 }
 .meet-our-team .dot2 {
   padding-bottom: 70px;
@@ -1264,12 +1271,25 @@ article .container .news-article .title {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 @media (min-width: 992px) {
   article .container .news-article .title {
     display: block;
+    justify-content: left;
+    text-align: left;
   }
+}
+article .container .news-article .title p {
+  color: #f94d1c;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 500;
+}
+article .container .news-article .title h2 {
+  font-size: 45px;
+  font-family: "DM sans", sans-serif;
+  font-weight: 700;
 }
 article .container .news-article a {
   display: flex;
