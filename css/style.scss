@@ -118,7 +118,7 @@ html, body{
     }
 }
 
-// 
+
 .button1 {
     background-color: #f9d783;
     color: #191919;
@@ -165,7 +165,7 @@ html, body{
        
     }
    
-}
+ }
 
 
 // header
@@ -430,30 +430,12 @@ header{
 
 // logos of partnerships-section
 
-
-// .container {        
-
-//     .logos img{
-        
-//             display:none;
-//             max-width: 100%;
-//             height: auto;
-            
+.container {        
 
 
-//              @media (min-width:920px){
-//                     display: flex;
-//                     justify-content: center;
-//                     margin-top: 30px;
-//                     margin-bottom: 100px;           
-                             
-//                 }
-
-//     }
-// // }
 
 .slider{
-    width: 75vw;
+    width:100%;
     height: auto;
     margin: auto;
     overflow: hidden;
@@ -462,7 +444,7 @@ header{
         display: flex;
         -webkit-animation: scroll 40s linear infinite;
         animation: scroll 40s linear infinite;        
-        width: calc(200px * 10);
+        width: calc(200px * 15);
 
         .slide{
             width: 200px;
@@ -486,7 +468,7 @@ header{
     }
 }
 
-
+}
 
 
 .parent{
@@ -587,6 +569,7 @@ header{
 }
 
 // ABOUT-section
+
 .about {
     display: block;
     justify-content: center;
@@ -834,6 +817,7 @@ header{
         width: 100%;
         height: auto;
         padding: 0px;
+        margin-top: 20px;
         text-align: left;
         background-color:#F0EFE9;
         position: relative;
@@ -850,7 +834,8 @@ header{
             text-align: center;
             width: 100%;
             height: auto;
-            margin: 8px;
+            padding-top: 20px;
+            margin: auto;
            
            
 
@@ -880,11 +865,11 @@ header{
                 font-weight: 700;
                 font-size: 45px;
                 text-align:center;
-                // padding-bottom: 10px;
+                
                
                 @media (min-width:1140px){
                     text-align: left;
-                    // padding-bottom: 30px;
+                  
                     
                 }
 
@@ -925,7 +910,22 @@ header{
                     text-align: end;
                     width: 100%;
                     height: auto;
-                    padding: 40px;                    
+                    padding: 40px;  
+                    
+                    &:hover{
+                        background-color: #f9d783;                    
+                        width: 100%;
+                        height: auto;
+                        margin: auto;
+                        transform: rotate(360deg);
+    
+                        h4{
+                            font-size: 30px;
+                        }
+                        p{
+                            font-size: 20px;
+                        }
+                        }
                 }
 
                 hr{
@@ -965,7 +965,6 @@ header{
                     a{
 
                         text-align:right;
-                        // font-size: 30px;
                         text-decoration: none;                 
                         i{
                             text-align: right;
@@ -981,19 +980,20 @@ header{
                         }                  
                     }
 
-                    &:hover{
-                    background-color: #f9d783;                    
-                    width: 150%;
-                    height: auto;
-                    transform: rotate(360deg);
+                    // &:hover{
+                    // background-color: #f9d783;                    
+                    // width: 100%;
+                    // height: auto;
+                    // margin: auto;
+                    // transform: rotate(360deg);
 
-                    h4{
-                        font-size: 35px;
-                    }
-                    p{
-                        font-size: 25px;
-                    }
-                    }
+                    // h4{
+                    //     font-size: 30px;
+                    // }
+                    // p{
+                    //     font-size: 20px;
+                    // }
+                    // }
                 
                 }   
                
@@ -1031,8 +1031,6 @@ header{
  //  Why choose us 
 
 .choose{  
-
-// position: relative;
 
 
     .container{
@@ -1134,8 +1132,7 @@ header{
          }
         .parent-2{  
             position: relative;
-            // max-width: 100%;
-            // height: auto;   
+            
             z-index: 0;
         
                 img{
@@ -1186,37 +1183,10 @@ header{
      
     } 
   
-
-
-
-
-
-    // .line3{
-       
-    //     position: absolute;
-    //     width:52%;
-    //     height:455px;
-    //     right:0px;
-    //     bottom:0px;
-    //     z-index: -1;
-
-    //     @media (min-width:992px) {
-    //         background-color: #F0EFE9;
-    //         z-index: -1;
-    //      }
-       
-
-   
-    // }  
-    
-    
     
  }      
        
     
-
-
-
 
 
     // Projects and cases

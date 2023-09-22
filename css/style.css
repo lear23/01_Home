@@ -343,24 +343,23 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
   z-index: -1;
 }
 
-.slider {
-  width: 75vw;
+.container .slider {
+  width: 100%;
   height: auto;
   margin: auto;
   overflow: hidden;
 }
-.slider .slide-track {
+.container .slider .slide-track {
   display: flex;
   animation: scroll 40s linear infinite;
-  width: 2000px;
+  width: 3000px;
 }
-.slider .slide-track .slide {
+.container .slider .slide-track .slide {
   width: 200px;
 }
-.slider .slide-track img {
+.container .slider .slide-track img {
   width: 100%;
 }
-
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -369,6 +368,7 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
     transform: translateX(-1000px);
   }
 }
+
 .parent {
   display: block;
   justify-content: center;
@@ -659,6 +659,7 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
   width: 100%;
   height: auto;
   padding: 0px;
+  margin-top: 20px;
   text-align: left;
   background-color: #F0EFE9;
   position: relative;
@@ -674,7 +675,8 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
   text-align: center;
   width: 100%;
   height: auto;
-  margin: 8px;
+  padding-top: 20px;
+  margin: auto;
 }
 @media (min-width: 1140px) {
   .our-services .row-services {
@@ -738,6 +740,19 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
     height: auto;
     padding: 40px;
   }
+  .our-services .service .tarjet:hover {
+    background-color: #f9d783;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    transform: rotate(360deg);
+  }
+  .our-services .service .tarjet:hover h4 {
+    font-size: 30px;
+  }
+  .our-services .service .tarjet:hover p {
+    font-size: 20px;
+  }
 }
 .our-services .service .tarjet hr {
   color: black;
@@ -780,18 +795,6 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
 }
 .our-services .service .tarjet a i:hover {
   color: white;
-}
-.our-services .service .tarjet:hover {
-  background-color: #f9d783;
-  width: 150%;
-  height: auto;
-  transform: rotate(360deg);
-}
-.our-services .service .tarjet:hover h4 {
-  font-size: 35px;
-}
-.our-services .service .tarjet:hover p {
-  font-size: 25px;
 }
 .our-services .center-content {
   padding: 20px;
