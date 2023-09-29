@@ -829,33 +829,52 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
   }
 }
 
-.choose .container {
+.choose {
   display: block;
   justify-content: center;
-  width: 100%;
+  text-align: center;
   height: auto;
   margin-top: 20px;
   margin-bottom: 35px;
 }
 @media (min-width: 992px) {
-  .choose .container {
-    display: flex;
+  .choose {
+    display: block;
+    justify-content: start;
+    align-items: left;
+    text-align: center;
     width: 100%;
     height: auto;
-    gap: 55px;
     margin-top: 100px;
     margin-bottom: 110px;
   }
 }
-.choose .container .box-1 {
-  display: block;
+@media (min-width: 1200px) {
+  .choose {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+}
+.choose .box-1 {
+  display: inline-block;
   justify-content: center;
   text-align: center;
   width: 100%;
   height: auto;
 }
+@media (min-width: 992px) {
+  .choose .box-1 {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+}
 @media (min-width: 1200px) {
-  .choose .container .box-1 {
+  .choose .box-1 {
     display: block;
     justify-content: left;
     text-align: left;
@@ -864,93 +883,123 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
     height: auto;
   }
 }
-.choose .container .box-1 p {
+.choose .box-1 p {
   text-align: center;
   color: #f94D1C;
   margin-bottom: 10px;
 }
-@media (min-width: 992px) {
-  .choose .container .box-1 p {
+@media (min-width: 1200px) {
+  .choose .box-1 p {
     text-align: left;
   }
 }
-.choose .container .box-1 h2 {
+.choose .box-1 h2 {
   text-align: center;
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 45px;
 }
-@media (min-width: 992px) {
-  .choose .container .box-1 h2 {
+@media (min-width: 1200px) {
+  .choose .box-1 h2 {
     text-align: left;
   }
 }
-.choose .container .box-1 .boxes {
-  display: flex;
+.choose .box-1 .boxes {
+  display: inline-block;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 20px 0;
-  gap: 30px;
-  margin-bottom: 30px;
 }
-@media (min-width: 992px) {
-  .choose .container .box-1 .boxes {
+@media (min-width: 1200px) {
+  .choose .box-1 .boxes {
+    display: flex;
     justify-content: left;
     align-items: center;
     text-align: left;
     margin-top: 30px;
+    gap: 30px;
+    margin-bottom: 30px;
+    margin-right: 110px;
   }
 }
-.choose .container .box-1 .boxes .box {
+.choose .box-1 .boxes .box {
   display: block;
+  justify-content: center;
+  align-items: center;
   width: 360px;
-}
-.choose .container .box-1 .boxes .box h4 {
-  text-align: center;
+  border-bottom: 1px solid #191919;
 }
 @media (min-width: 992px) {
-  .choose .container .box-1 .boxes .box h4 {
+  .choose .box-1 .boxes .box {
+    text-align: left;
+    border: none;
+  }
+}
+.choose .box-1 .boxes .box h4 {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "DM sans", sans-serif;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .choose .box-1 .boxes .box h4 {
     text-align: left;
   }
 }
-.choose .container .box-1 .boxes .box p {
+.choose .box-1 .boxes .box p {
   color: #191919;
 }
-.choose .container .parent-2 {
+.choose .parent-2 {
   position: relative;
   z-index: 0;
+  padding-top: 40px;
 }
-.choose .container .parent-2 img {
-  margin-top: 60px;
+@media (min-width: 540px) {
+  .choose .parent-2 {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+}
+.choose .parent-2 img {
   width: 100%;
   height: auto;
   z-index: 1;
 }
-@media (min-width: 920px) {
-  .choose .container .parent-2 img {
-    min-width: 100%;
+@media (min-width: 992px) {
+  .choose .parent-2 img {
+    margin-top: 60px;
     width: auto;
     height: auto;
   }
 }
-.choose .container .parent-2 .line3 {
+.choose .parent-2 .line3 {
   display: none;
 }
-@media (min-width: 720px) {
-  .choose .container .parent-2 .line3 {
+@media (min-width: 992px) {
+  .choose .parent-2 .line3 {
     display: flex;
+    justify-content: end;
+    align-items: center;
     position: absolute;
     background-color: #F0EFE9;
     width: 600px;
-    height: 550px;
-    left: -40px;
+    height: 520px;
+    left: -80px;
     bottom: 60px;
     transition: width 1s;
     z-index: -1;
   }
+  .choose .parent-2 .line3 h2 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    color: #f94D1C;
+    padding-right: 120px;
+  }
 }
-.choose .container .parent-2 .line3:hover {
+.choose .parent-2 .line3:hover {
   width: 1200px;
 }
 
