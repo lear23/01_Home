@@ -442,7 +442,7 @@ header{
       }
 }
 
-// logos of partnerships-section
+// logos of partnerships-section SLIDER
 
 .container {
  
@@ -492,6 +492,7 @@ header{
 
 }
 
+//  FEATURES
 
 .parent{
     display: block;
@@ -838,15 +839,6 @@ header{
 
                  }
 
-
-                // @media (min-width:440px){
-                //     display: flex;
-
-                //  }
-                // @media (min-width:1200px){
-                //     display: flex;
-
-                //  }
         
              }
 
@@ -1058,7 +1050,6 @@ header{
     display: block;
     justify-content: center;
     text-align: center;
-    // max-width: 1200px;
     height: auto;                
     margin-top: 20px;
     margin-bottom: 35px;
@@ -1077,7 +1068,7 @@ header{
         display: flex;
         width: 100%;
         height: auto;
-        // gap: 55px;
+      
       
     }
 
@@ -1190,14 +1181,7 @@ header{
         position: relative;
         z-index: 0;
         padding-top: 40px;
-        // padding: 60px;
-
-        // @media (min-width:1200px) {
-        //     display: block;
-        //     justify-content: center;
-        //     align-items: center;
-            
-        // }
+      
         @media (min-width:540px) {
             
             display: flex;
@@ -1622,15 +1606,24 @@ header{
             max-width: 300px;
             width:auto;
             height: auto;
-            transition: width 2s, height 2s, transform 1s;
+            transition:none;
+            
+            @media (min-width:576px) {               
+                transition: width 2s, height 2s, transform 1s;
+              }
 
             &:hover {
                 background-color: white;
-                transform: scale(1.1);
+                transform: none;
                 padding: 0;
                 text-align: center;
+
+                @media (min-width:576px) {
+                    transform: scale(1.1);
+                  }
               
               }
+             
         }
         .img-team-2{
             max-width: 300px;
@@ -1640,9 +1633,13 @@ header{
 
             &:hover {
                 background-color: white;
-                transform: scale(1.1);
+                transform: none;
                 padding: 0;
                 text-align: center;
+
+                @media (min-width:576px) {
+                    transform: scale(1.1);
+                  }
               
               }
         }
@@ -1655,24 +1652,32 @@ header{
 
             &:hover {
                 background-color: white;
-                transform: scale(1.1);
+                transform: none;
                 padding: 0;
                 text-align: center;
+
+                @media (min-width:576px) {
+                    transform: scale(1.1);
+                  }
               
               }
         }
         
         .img-team-4{
             max-width: 300px;
-            width: auto;
+            width:auto;
             height: auto;
             transition: width 2s, height 2s, transform 1s;
 
             &:hover {
                 background-color: white;
-                transform: scale(1.1);
+                transform: none;
                 padding: 0;
                 text-align: center;
+
+                @media (min-width:576px) {
+                    transform: scale(1.1);
+                  }
               
               }
         }
@@ -1838,8 +1843,6 @@ header{
 
             @media(min-width:992px){
                 display: flex;
-                // justify-content: space-between;
-                // align-items: center;
                 padding-top: 40px;
                 padding-bottom: 40px;
             }
