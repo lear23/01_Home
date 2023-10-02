@@ -62,7 +62,7 @@ html, body {
 
 .btn-transparent {
   background-color: transparent;
-  border: 1px solid #f9d783;
+  border: 1px solid #191919;
   color: #191919;
   text-decoration: none;
   padding: 12px 28px;
@@ -76,8 +76,9 @@ html, body {
   font-weight: bolder;
 }
 .btn-transparent:hover {
-  background-color: whitesmoke;
+  background-color: #f9d783;
   color: #191919;
+  border: none;
 }
 
 .btn-theme-3 {
@@ -319,6 +320,10 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
     display: inline-block;
   }
 }
+.showcase .container .content .buttons-showcase a:hover {
+  border: none;
+  box-shadow: 3px 3px 3px 3px rgba(25, 25, 25, 0.4078431373);
+}
 .showcase .container img {
   display: none;
   margin-right: -50px;
@@ -440,6 +445,10 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
     width: 100%;
     padding: 10px 120px;
   }
+}
+.parent .features a:hover {
+  border: none;
+  box-shadow: 3px 3px 5px 5px rgba(25, 25, 25, 0.4078431373);
 }
 .parent .boxes {
   display: grid;
@@ -656,11 +665,21 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
   padding: 5px;
   font-size: 1rem;
 }
+.about .about-company .button-intro .botton-video a:hover {
+  border: none;
+  box-shadow: 3px 3px 5px 5px rgba(25, 25, 25, 0.4078431373);
+}
 .about .about-company .button-intro .intro {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
+  margin-top: 20px;
+  padding-right: 10px;
+}
+.about .about-company .button-intro .intro:hover {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 3px 3px 5px 5px rgba(25, 25, 25, 0.4078431373);
 }
 .about .about-company .button-intro .intro a {
   text-decoration: none;
@@ -761,6 +780,7 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
   }
   .our-services .service .tarjet:hover {
     background-color: #f9d783;
+    box-shadow: 5px 5px 5px 5px rgba(25, 25, 25, 0.3882352941);
   }
 }
 .our-services .service .tarjet hr {
@@ -816,6 +836,10 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
     margin-top: 40px;
     margin-bottom: 120px;
   }
+}
+.our-services .center-content a:hover {
+  border: none;
+  box-shadow: 3px 3px 3px 3px rgba(25, 25, 25, 0.4078431373);
 }
 .our-services .line {
   display: none;
@@ -1127,6 +1151,10 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
   border: 1px solid #191919;
   padding: 12px 50px;
 }
+.meet-our-team .team .team-title a:hover {
+  border: none;
+  box-shadow: 3px 3px 5px 5px rgba(25, 25, 25, 0.4078431373);
+}
 .meet-our-team .team-images {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -1323,6 +1351,9 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
   padding-top: 40px;
   padding-bottom: 40px;
 }
+.meet-our-team .testimonial .container .black-button a:hover {
+  box-shadow: 3px 3px 5px 5px rgba(25, 25, 25, 0.4431372549);
+}
 
 article {
   background-color: #ffffff;
@@ -1377,6 +1408,7 @@ article .container .news-article .title h2 {
 article .container .news-article a {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #ffffff;
   color: #5c5c5c;
   border: #191919;
@@ -1390,6 +1422,17 @@ article .container .news-article a {
   article .container .news-article a {
     padding: 16px 55px;
   }
+}
+article .container .news-article a i {
+  margin-left: 20px;
+  font-weight: 700;
+  font-size: 12px;
+}
+article .container .news-article a:hover {
+  background-color: #f9d783;
+  color: #191919;
+  border: none;
+  box-shadow: 3px 3px 5px 5px rgba(25, 25, 25, 0.4078431373);
 }
 article .container .new-image {
   display: block;
@@ -1480,6 +1523,14 @@ article .container .dot {
   .sub-footer .container form input {
     margin-right: 20px;
   }
+}
+.sub-footer .container form input:hover {
+  border: none;
+  box-shadow: 3px 3px 5px 5px rgba(25, 25, 25, 0.4078431373);
+}
+.sub-footer .container form a:hover {
+  border: none;
+  box-shadow: 3px 3px 5px 5px rgba(25, 25, 25, 0.4078431373);
 }
 
 .footer {

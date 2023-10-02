@@ -51,7 +51,6 @@ html, body{
     color: #ffffff;
     text-decoration: none;
     padding: 12px 30px;
-    // margin-left: 20px;
     font-weight: 600;
     font-size: 16px;
     border-radius: 30px;
@@ -71,7 +70,7 @@ html, body{
 
 .btn-transparent {
     background-color: transparent;
-    border: 1px solid #f9d783;
+    border: 1px solid #191919;
     color: #191919;
     text-decoration: none;
     padding: 12px 28px;
@@ -85,8 +84,9 @@ html, body{
         font-weight: bolder;
     }
     &:hover{
-        background-color: whitesmoke;
+        background-color: #f9d783;
         color: #191919;
+        border: none;
     }
 }
 
@@ -285,6 +285,7 @@ header{
                             left: 50%;/* det kan vara 50% med transform:translate annars med 35% funkar på samma sätt*/
                             bottom: -3px;
                             transform: translate((calc(50% - 15px)));
+                            
                         }
                        
                     }
@@ -362,7 +363,7 @@ header{
                 justify-content: center;
                 align-items: center;
                 margin: 10px;
-             
+                
            
 
                 @media (min-width:992px) {
@@ -384,30 +385,15 @@ header{
                            
                             display: inline-block;                
                         }
+                        &:hover{
+                            border: none;
+                            box-shadow: 3px 3px 3px 3px #19191968;
+                           }
+                     
+                       
                         
                 }
-                // .btn-theme{
-                    
-                //     display: inline-block;
-                //     justify-content: center;  
-                //     align-items: center;
-                    
-                //     @media (min-width:992px) {
-                       
-                //         display: inline-block;                
-                //     }
-                    
-                //   }
-                //   .btn-transparent{
-                //     display: inline-block;
-                //     // margin-bottom: 20x;   
-                    
-                //     @media (min-width:992px) {
-                //         margin-right: 10px;
-                //         display: inline-block;                
-                //     }
-                    
-                //   }
+               
            
            }
       
@@ -567,6 +553,11 @@ header{
                padding: 10px 120px;
                              
             }
+            &:hover{
+                border: none;
+                box-shadow: 3px 3px 5px 5px #19191968;
+               }
+         
             
           }
 
@@ -807,6 +798,10 @@ header{
                             padding: 5px;
                             font-size: 1rem;
                           }
+                          &:hover{
+                            border: none;
+                            box-shadow: 3px 3px 5px 5px #19191968;
+                           }
 
                         
                       }
@@ -821,12 +816,21 @@ header{
                     display:flex;
                     justify-content: center;
                     align-items: center;
-                    padding-top: 20px;
+                    margin-top: 20px;
+                    padding-right: 10px;
+
+                    &:hover{
+                        border: none;
+                        border-radius: 15px;
+                        box-shadow: 3px 3px 5px 5px #19191968;
+                       }
 
                     a{
                         text-decoration: none;
                         color: #191919;
                         font-size: 20px;
+
+                       
                     }
 
                     img{
@@ -950,9 +954,12 @@ header{
                     width: 100%;
                     height: auto;
                     padding: 40px;  
+                 
                     
                     &:hover{
-                        background-color: #f9d783;                    
+                        background-color: #f9d783; 
+                        box-shadow: 5px 5px 5px 5px #19191963;
+                                         
                      
                      }
                 }
@@ -1023,6 +1030,10 @@ header{
                 
                  margin-top: 40px;
                  margin-bottom: 120px;
+               }
+               &:hover{
+                border: none;
+                box-shadow: 3px 3px 3px 3px #19191968;
                }
             }
          }
@@ -1551,7 +1562,6 @@ header{
             }          
 
             h2{
-            // 
                 text-align: center;
                 margin-bottom: 30px;
                 @media (min-width:992px) {
@@ -1567,6 +1577,10 @@ header{
             
                 border: 1px solid #191919;
                 padding: 12px 50px;
+                &:hover{
+                    border: none;
+                    box-shadow: 3px 3px 5px 5px #19191968;
+                   }
               
 
             }
@@ -1804,6 +1818,13 @@ header{
             align-items: center;
             padding-top: 40px;
             padding-bottom: 40px;
+
+            a{
+                &:hover{
+                    box-shadow: 3px 3px 5px 5px #19191971;
+                }
+            }
+
         }
 
 
@@ -1875,6 +1896,7 @@ header{
             a{
                 display: flex;
                 justify-content: center;
+                align-items:center;
                 background-color: #ffffff;
                 color: #5c5c5c;
                 border: #191919;
@@ -1887,6 +1909,17 @@ header{
                 @media(min-width: 992px){
                     padding: 16px 55px;
                 }
+                i{  
+                    margin-left: 20px;               
+                    font-weight: 700;
+                    font-size: 12px;
+                }
+                &:hover{
+                    background-color:#f9d783 ;
+                    color: #191919;
+                    border: none;
+                    box-shadow: 3px 3px 5px 5px #19191968;
+                   }
             }
    
         }
@@ -2004,8 +2037,18 @@ header{
                     margin-right: 20px;
                     
                 }
+                &:hover{
+                    border: none;
+                    box-shadow: 3px 3px 5px 5px #19191968;
+                   }
 
 
+            }
+            a{
+                &:hover{
+                    border: none;
+                    box-shadow: 3px 3px 5px 5px #19191968;
+                   }
             }
 
         }
