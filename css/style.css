@@ -408,12 +408,11 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
   }
 }
 .parent .features h5 {
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 500;
   text-align: center;
   padding-bottom: 10px;
   color: #f94D1C;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #797979;
 }
 @media (min-width: 1200px) {
   .parent .features h5 {
@@ -600,8 +599,6 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
   text-align: center;
   padding-bottom: 30px;
   color: #f94D1C;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #797979;
 }
 @media (min-width: 1200px) {
   .about .about-company h5 {
@@ -1132,7 +1129,6 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
     align-items: center;
     justify-content: space-between;
     text-align: left;
-    padding-bottom: 50px;
   }
 }
 .meet-our-team .team .team-title h2 {
@@ -1327,8 +1323,9 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
 }
 .meet-our-team .testimonial .container .customers-rating .clients .customers {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
+  gap: 5px;
 }
 .meet-our-team .testimonial .container .customers-rating .clients .customers .img-customer {
   display: block;
@@ -1425,6 +1422,7 @@ article .container .news-article a {
 }
 article .container .news-article a i {
   margin-left: 20px;
+  margin-top: 15px;
   font-weight: 700;
   font-size: 12px;
 }

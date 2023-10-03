@@ -512,12 +512,12 @@ header{
 
         
          h5{
-            font-size: 20px;
+            font-size: 18px;
+            font-weight: 500;
             text-align: center;
             padding-bottom: 10px;
             color: #f94D1C;
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: #797979;
+        
 
              @media (min-width:1200px){
                     text-align:left;
@@ -707,12 +707,14 @@ header{
         align-items: center;
         text-align: center;
         margin-top: 20px;
+      
         
 
         @media (min-width:1200px){
             justify-content: center;
             text-align: left;
             margin-right: 60px;
+          
          }
 
 
@@ -721,8 +723,7 @@ header{
             text-align: center;
             padding-bottom: 30px;           
             color: #f94D1C;
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: #797979;
+            
             
             @media (min-width:1200px){
                 text-align: left;
@@ -1557,7 +1558,7 @@ header{
                 align-items: center;
                 justify-content: space-between;
                 text-align: left;
-                padding-bottom: 50px;
+                // padding-bottom: 30px;
                
             }          
 
@@ -1784,13 +1785,14 @@ header{
 
                  .customers{
                     display: flex;
-                    justify-content: center;
+                    justify-content: left;
                     align-items: center;
-
+                    gap: 5px;
                   
                     .img-customer{
                         display: block;
-                        justify-content: center;                     
+                        justify-content: center;  
+                                           
 
                         h3{
                             font-family: 'DM sans', sans-serif;
@@ -1910,7 +1912,8 @@ header{
                     padding: 16px 55px;
                 }
                 i{  
-                    margin-left: 20px;               
+                    margin-left: 20px;  
+                    margin-top: 15px;             
                     font-weight: 700;
                     font-size: 12px;
                 }
