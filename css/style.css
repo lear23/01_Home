@@ -988,6 +988,7 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
   align-items: center;
   width: 360px;
   border-bottom: 1px solid #191919;
+
 }
 @media (min-width: 992px) {
   .choose .box-1 .boxes .box {

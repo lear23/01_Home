@@ -119,28 +119,6 @@ html, body{
 }
 
 
-.button1 {
-    background-color: #f9d783;
-    color: #191919;
-    text-decoration: none;
-    width:100%;
-    border-radius:3em;
-    border: none;
-    padding: 10px;
-
-    i{
-        margin-left: 8px;
-        padding-bottom: 15px;
-        font-size: 9px;
-        font-weight: bolder;
-    }
-    &:hover{
-        background-color: #f9d783;
-        color: #191919;
-    }
-    
-
-} 
 
 .center-content{
     display: flex;
@@ -1130,8 +1108,7 @@ header{
      .box-1{
          display:inline-block;
          justify-content: center;
-         text-align: center;
-       
+         text-align: center;       
          width: 100%;
          height:auto; 
 
@@ -1150,8 +1127,7 @@ header{
             justify-content: left;
             width: 100%;
             height: auto;
-         }
-        
+         }       
 
 
          p{
@@ -1203,11 +1179,11 @@ header{
                justify-content: center;
                align-items: center;
                width: 360px;
-               border-bottom: 1px solid #191919;
+            //    border-bottom: 1px solid #191919;
 
                @media (min-width:992px) {
                 text-align: left;
-                border: none;
+                // border: none;
               
             }
 
