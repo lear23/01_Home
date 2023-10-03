@@ -1587,15 +1587,21 @@ article .container .dot {
   .footer .container {
     grid-template-columns: repeat(5, 1fr);
     justify-content: space-between;
-    -moz-column-gap: 60px;
-         column-gap: 60px;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
     padding-top: 100px;
     padding-bottom: 90px;
   }
 }
+.footer .container .link-1 {
+  margin-left: 0;
+}
 .footer .container .link-1 p {
   margin-top: 25px;
   color: #b6b6bc;
+}
+.footer .container .link-2{
+  margin-left: 20px;
 }
 .footer .container .link-2 h4 {
   color: white;
@@ -1603,11 +1609,9 @@ article .container .dot {
   padding-bottom: 20px;
   text-align: left;
 }
-.footer .container .link-2 p {
-  color: #b6b6bc;
-  text-align: left;
-}
 .footer .container .link-2 ul {
+  text-align:justify;
+  line-height: 2.5;
   list-style: none;
   padding: 0px;
 }
@@ -1621,11 +1625,10 @@ article .container .dot {
   padding-bottom: 20px;
   text-align: left;
 }
-.footer .container .link-3 p {
-  color: #b6b6bc;
-  text-align: left;
-}
+
 .footer .container .link-3 ul {
+  text-align:justify;
+  line-height: 2.5;
   list-style: none;
   padding: 0px;
 }
@@ -1639,11 +1642,9 @@ article .container .dot {
   padding-bottom: 20px;
   text-align: left;
 }
-.footer .container .link-4 p {
-  color: #b6b6bc;
-  text-align: left;
-}
 .footer .container .link-4 ul {
+  text-align:justify;
+  line-height: 2.5;
   list-style: none;
   padding: 0px;
 }
@@ -1651,14 +1652,14 @@ article .container .dot {
   color: #b6b6bc;
   text-decoration: none;
 }
+.footer .container .link-5 {
+  text-align:justify;
+  line-height: 2.5;
+}
 .footer .container .link-5 h4 {
   color: white;
   padding-top: 20px;
   padding-bottom: 20px;
-  text-align: left;
-}
-.footer .container .link-5 p {
-  color: #b6b6bc;
   text-align: left;
 }
 .footer .container .link-5 ul {
