@@ -107,26 +107,6 @@ html, body {
   color: #191919;
 }
 
-.button1 {
-  background-color: #f9d783;
-  color: #191919;
-  text-decoration: none;
-  width: 100%;
-  border-radius: 3em;
-  border: none;
-  padding: 10px;
-}
-.button1 i {
-  margin-left: 8px;
-  padding-bottom: 15px;
-  font-size: 9px;
-  font-weight: bolder;
-}
-.button1:hover {
-  background-color: #f9d783;
-  color: #191919;
-}
-
 .center-content {
   display: flex;
   justify-content: center;
@@ -987,13 +967,10 @@ header .container .menu .main-menu nav a.home-bold::after, header .container .me
   justify-content: center;
   align-items: center;
   width: 360px;
-  border-bottom: 1px solid #191919;
-
 }
 @media (min-width: 992px) {
   .choose .box-1 .boxes .box {
     text-align: left;
-    border: none;
   }
 }
 .choose .box-1 .boxes .box h4 {
@@ -1576,13 +1553,12 @@ article .container .dot {
 }
 .footer .container {
   display: grid;
-  justify-content: center;
   grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
   -moz-column-gap: 20px;
        column-gap: 20px;
-  padding-left: 20px;
+  padding-left: 40px;
   padding-top: 40px;
-  text-align: left;
 }
 @media (min-width: 992px) {
   .footer .container {
@@ -1598,10 +1574,11 @@ article .container .dot {
   margin-left: 0;
 }
 .footer .container .link-1 p {
+  text-align: left;
   margin-top: 25px;
   color: #b6b6bc;
 }
-.footer .container .link-2{
+.footer .container .link-2 {
   margin-left: 20px;
 }
 .footer .container .link-2 h4 {
@@ -1611,7 +1588,7 @@ article .container .dot {
   text-align: left;
 }
 .footer .container .link-2 ul {
-  text-align:justify;
+  text-align: justify;
   line-height: 2.5;
   list-style: none;
   padding: 0px;
@@ -1626,9 +1603,8 @@ article .container .dot {
   padding-bottom: 20px;
   text-align: left;
 }
-
 .footer .container .link-3 ul {
-  text-align:justify;
+  text-align: justify;
   line-height: 2.5;
   list-style: none;
   padding: 0px;
@@ -1644,7 +1620,7 @@ article .container .dot {
   text-align: left;
 }
 .footer .container .link-4 ul {
-  text-align:justify;
+  text-align: justify;
   line-height: 2.5;
   list-style: none;
   padding: 0px;
@@ -1654,13 +1630,17 @@ article .container .dot {
   text-decoration: none;
 }
 .footer .container .link-5 {
-  text-align:justify;
+  text-align: justify;
   line-height: 2.5;
 }
 .footer .container .link-5 h4 {
   color: white;
   padding-top: 20px;
   padding-bottom: 20px;
+  text-align: left;
+}
+.footer .container .link-5 p {
+  color: #b6b6bc;
   text-align: left;
 }
 .footer .container .link-5 ul {
@@ -1688,12 +1668,13 @@ article .container .dot {
 .footer .subfoot {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   color: white;
-  padding: 20px;
+  padding: 10;
 }
 @media (min-width: 992px) {
   .footer .subfoot {
+    display: flex;
+    justify-content: space-between;
     padding: 0px;
   }
 }
