@@ -2,7 +2,7 @@
 @import url('https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css');
 @import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,900;1,9..40,600&display=swap');;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,900;1,9..40,600&display=swap');
 
 
 *{
@@ -1179,11 +1179,10 @@ header{
                justify-content: center;
                align-items: center;
                width: 360px;
-            //    border-bottom: 1px solid #191919;
 
                @media (min-width:992px) {
                 text-align: left;
-                // border: none;
+                
               
             }
 
@@ -1273,9 +1272,6 @@ header{
     
  
 } 
-
-
-
 
     // Projects and cases
 
@@ -1420,7 +1416,6 @@ header{
                 align-items: center;
                 justify-content: space-between;
                 text-align: left;
-                // padding-bottom: 30px;
                
             }          
 
