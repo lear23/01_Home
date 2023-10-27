@@ -1473,7 +1473,7 @@ header{
             padding-bottom: 50px;
             text-align: left;
         }
-        .img-team-1{
+        .img-team{
             justify-content: center;
             max-width: 300px;
             width:auto;
@@ -1497,67 +1497,11 @@ header{
               }
              
         }
-        .img-team-2{
-            max-width: 300px;
-            width: auto;
-            height: auto;
-            transition: width 2s, height 2s, transform 1s;
 
-            &:hover {
-                background-color: white;
-                transform: none;
-                padding: 0;
-                text-align: center;
 
-                @media (min-width:576px) {
-                    transform: scale(1.1);
-                  }
-              
-              }
-        }
-        
-        .img-team-3{
-            max-width: 300px;
-            width:auto;
-            height: auto;
-            transition: width 2s, height 2s, transform 1s;
-
-            &:hover {
-                background-color: white;
-                transform: none;
-                padding: 0;
-                text-align: center;
-
-                @media (min-width:576px) {
-                    transform: scale(1.1);
-                  }
-              
-              }
-        }
-        
-        .img-team-4{
-            max-width: 300px;
-            width:auto;
-            height: auto;
-            transition: width 2s, height 2s, transform 1s;
-
-            &:hover {
-                background-color: white;
-                transform: none;
-                padding: 0;
-                text-align: center;
-
-                @media (min-width:576px) {
-                    transform: scale(1.1);
-                  }
-              
-              }
-        }
-        
-        
-    
-     
     }
+       
+  
     
 
 
@@ -2111,3 +2055,70 @@ header{
 
 
 
+
+
+
+
+
+
+
+  // .img-team-2{
+        //     max-width: 300px;
+        //     width: auto;
+        //     height: auto;
+        //     transition: width 2s, height 2s, transform 1s;
+
+        //     &:hover {
+        //         background-color: white;
+        //         transform: none;
+        //         padding: 0;
+        //         text-align: center;
+
+        //         @media (min-width:576px) {
+        //             transform: scale(1.1);
+        //           }
+              
+        //       }
+        // }
+        
+        // .img-team-3{
+        //     max-width: 300px;
+        //     width:auto;
+        //     height: auto;
+        //     transition: width 2s, height 2s, transform 1s;
+
+        //     &:hover {
+        //         background-color: white;
+        //         transform: none;
+        //         padding: 0;
+        //         text-align: center;
+
+        //         @media (min-width:576px) {
+        //             transform: scale(1.1);
+        //           }
+              
+        //       }
+        // }
+        
+        // .img-team-4{
+        //     max-width: 300px;
+        //     width:auto;
+        //     height: auto;
+        //     transition: width 2s, height 2s, transform 1s;
+
+        //     &:hover {
+        //         background-color: white;
+        //         transform: none;
+        //         padding: 0;
+        //         text-align: center;
+
+        //         @media (min-width:576px) {
+        //             transform: scale(1.1);
+        //           }
+              
+        //       }
+        // }
+        
+        
+    
+     
